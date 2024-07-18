@@ -1,4 +1,3 @@
-@for (patient of patients; track patient; let i = $index;) {
 <div class="flex">
     <div class="bg-seasalt patient mb-2">
         <span>{{ patient.name }}</span>
@@ -6,6 +5,5 @@
         <span>{{ patient.tel }}</span>
         <span>{{ patient.socialSecurity }}</span>
     </div>
-    <button class="h-10 px-2 w-24 rounded-e bg-mainColor text-seasalt font-semibold hover:text-lg transition-all">Ver mas</button>
+    <button (click)="openDialog()" class="h-10 px-2 w-24 rounded-e bg-mainColor text-seasalt font-semibold hover:text-lg transition-all">Ver mas</button>
 </div>
-}

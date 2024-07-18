@@ -1,0 +1,21 @@
+<div class="bg-anti-flash_white rounded-xl p-4">
+    <h2 class="text-lg font-bold">{{data.patient.name + ' ' + data.patient.lastName}}</h2>
+    <p class="text-lg font-medium">Informacion general:</p>
+    <div class="mb-4 flex flex-col border-b border-outer_space">
+        <span class="p-2 bg-seasalt border-t border-outer_space">Nombre: {{data.patient.name}}</span>
+        <span class="p-2 bg-seasalt border-t border-outer_space">Apellido: {{data.patient.lastName}}</span>
+        <span class="p-2 bg-seasalt border-t border-outer_space">Telefono: {{data.patient.tel}}</span>
+        <span class="p-2 bg-seasalt border-t border-outer_space">Email: {{data.patient.email}}</span>
+        <span class="p-2 bg-seasalt border-t border-outer_space">Fecha de nacimiento: {{data.patient.birthDate}}</span>
+        <span class="p-2 bg-seasalt border-t border-outer_space">Sexo: {{data.patient.gender}}</span>
+        <span class="p-2 bg-seasalt border-t border-outer_space">Obra social: {{data.patient.socialSecurity}}</span>
+    </div>
+    <div class="flex gap-2">
+        <app-action-button>
+            + Añadir odontograma
+        </app-action-button>
+        <app-action-button>
+            + Añadir cita
+        </app-action-button>
+    </div>
+</div>
