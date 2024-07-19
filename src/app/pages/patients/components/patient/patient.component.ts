@@ -20,6 +20,7 @@ export class PatientComponent {
     email: '',
     birthDate: '',
     gender: '',
+    dni: 0,
     socialSecurity: '',
   };
 

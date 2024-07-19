@@ -1,0 +1,22 @@
+<div>
+    <p class="text-lg font-medium">Odontograma:</p>
+    <div>
+        @for (quadrant of odontogram.quadrants; track quadrant; let i = $index;) {
+        <div class="quadrant">
+            <p>{{ quadrant.name }}</p>
+            <div class="flex mb-4 gap-2">
+                @for (tooth of quadrant.theet; track tooth; let i = $index;) {
+                <div class="toothContainer">
+                    <div class="tooth">
+                        @for (division of tooth.tooth.divisions; track division; let i = $index;) {
+                            <div class="w-full h-full" [ngClass]="{'bg-carie': division.state === 'Carie', 'bg-health text-white': division.state === 'Saludable'}"></div>
+                        }
+                    </div>
+                    <div class="text-center">{{tooth.tooth.name}}</div>
+                </div>
+                }
+            </div>
+        </div>
+        }
+    </div> 
+</div>

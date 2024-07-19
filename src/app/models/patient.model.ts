@@ -5,38 +5,43 @@ export interface Patient {
   email: string;
   birthDate: string;
   gender: string;
+  dni: number;
   socialSecurity: string;
   odontogram?: Odontogram;
 }
 
-export interface Odontogram {
-  quadrants: [
+interface Tooth {
+  name: number;
+  comment: string;
+  divisions: [
     {
-      name: string;
-      theet: [
-        {
-          tooth: {
-            name: number;
-            comment: string;
-            divisions: [
-              {
-                name:
-                  | 'occlusal'
-                  | 'vestibular'
-                  | 'mesial'
-                  | 'distal'
-                  | 'palatine';
-                state:
-                  | 'cavities'
-                  | 'restoration'
-                  | 'Waiting for extraction'
-                  | 'absent'
-                  | 'healthy';
-              }
-            ];
-          };
-        }
-      ];
-    }
+      name: 'Oclusal';
+      state: 'Carie' | 'Saludable';
+    },
+    {
+      name: 'Vestibular';
+      state: 'Carie' | 'Saludable';
+    },
+    {
+      name: 'Mesial';
+      state: 'Carie' | 'Saludable';
+    },
+    {
+      name: 'Distal';
+      state: 'Carie' | 'Saludable';
+    },
+    {
+      name: 'Platino';
+      state: 'Carie' | 'Saludable';
+    },
   ];
+}
+
+interface Quadrant {
+  name: string;
+  theet: { tooth: Tooth }[];
+}
+
+export interface Odontogram {
+  quadrants: Quadrant[];
 }

@@ -15,6 +15,7 @@ export class PatientsService {
       email: 'maria.gonzalez@example.com',
       birthDate: '1990-05-15',
       gender: 'F',
+      dni: 43405120,
       socialSecurity: 'IOMA',
     },
     {
@@ -24,6 +25,7 @@ export class PatientsService {
       email: 'juan.perez@example.com',
       birthDate: '1985-10-20',
       gender: 'M',
+      dni: 43405120,
       socialSecurity: 'OSDE',
     },
     {
@@ -33,6 +35,7 @@ export class PatientsService {
       email: 'luisa.martinez@example.com',
       birthDate: '1982-03-25',
       gender: 'F',
+      dni: 43405120,
       socialSecurity: 'IOMA',
     },
     {
@@ -42,6 +45,7 @@ export class PatientsService {
       email: 'pedro.sanchez@example.com',
       birthDate: '1978-12-10',
       gender: 'M',
+      dni: 43405120,
       socialSecurity: 'Ninguno',
     },
     {
@@ -51,6 +55,7 @@ export class PatientsService {
       email: 'ana.lopez@example.com',
       birthDate: '1995-08-03',
       gender: 'F',
+      dni: 43405120,
       socialSecurity: 'IOMA',
     },
     {
@@ -60,6 +65,7 @@ export class PatientsService {
       email: 'javier.garcia@example.com',
       birthDate: '1987-06-20',
       gender: 'M',
+      dni: 43405120,
       socialSecurity: 'Ninguno',
     },
     {
@@ -69,11 +75,16 @@ export class PatientsService {
       email: 'sofia.diaz@example.com',
       birthDate: '1993-04-12',
       gender: 'F',
+      dni: 43405120,
       socialSecurity: 'OSDE',
     },
   ];
 
   getPatients() {
     return this.patients;
+  }
+
+  addOdontogram() {
+    
   }
 }

@@ -40,6 +40,12 @@ module.exports = {
       mainColor: {
         DEFAULT: "#2BBDAE",
       },
+      health: {
+        DEFAULT: "#20bf55",
+      },
+      carie: {
+        DEFAULT: "#ff6392",
+      },      
     },
   },
   plugins: [],
